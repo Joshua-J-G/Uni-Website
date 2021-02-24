@@ -1,0 +1,132 @@
+
+/* CSS Document */
+
+body,html{
+	
+	height: 100%;
+	margin: 0;
+	color: white;
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+}
+
+a {
+	color: white;
+	text-decoration:  none;
+}
+
+body{
+	background: url('../Images/BG/SVG/GradientBG.svg') no-repeat;
+	background-size: cover;
+
+   overflow-y: hidden;
+}
+
+#center{
+	position:fixed;
+	top: 50%;
+	
+    left:50%;
+	transform: translate(-50%, -50%);
+}
+
+#topright
+{
+	padding: 15px;
+}
+
+nav {
+	position:  absolutel;
+	left:  50%;
+	
+	width: 55%;
+}
+
+nav ul {
+	list-style-type: none;
+	
+	
+}
+
+nav ul li{
+	
+}
+
+nav ul li a{
+	color: white;
+	padding:  0 0px;
+		
+	
+}
+li {
+  display: inline;
+  padding: 60px
+}
+#centertext{
+	position:absolute;
+	top: 6%;
+	font-size: 30px;
+	font-family: 'DM Sans', sans-serif;
+    left:50%;
+	transform: translate(-50%, -50%);
+
+}
+	
+.bottomright{
+	position:fixed;
+	top: 98%;
+	font-size: 20px;
+	font-family: 'DM Sans', sans-serif;
+    left:4%;
+	transform: translate(-50%, -50%);
+}
+.fade-in {
+  animation: fadeIn ease 8s;
+  -webkit-animation: fadeIn ease 8s;
+  -moz-animation: fadeIn ease 8s;
+  -o-animation: fadeIn ease 8s;
+  -ms-animation: fadeIn ease 8s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+
