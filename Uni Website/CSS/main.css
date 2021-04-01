@@ -5,9 +5,12 @@ body,html{
 	
 	height: 100%;
 	margin: 0;
+	background-color: #0D0E13;
 	color: white;
 	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+	
 }
+
 
 a {
 	color: white;
@@ -61,6 +64,26 @@ li {
   display: inline;
   padding: 60px
 }
+
+	a{
+		transition:all 0.5s linear;
+		
+		
+		color:#fff;
+		text-decoration:none;
+		background: linear-gradient(to right, rgba(0,209,177,1) 0%,rgba(39,143,198,1) 98%);
+		background-size:0px 4px;
+		background-repeat: no-repeat;
+		background-position:left 95%;
+		text-shadow:0;
+		
+		}
+	a:hover{
+		
+			background-size:100% 4px;
+			text-shadow:0 2.5px 4px rgba(0,0,0,0.5);
+}
+
 #centertext{
 	position:absolute;
 	top: 6%;
@@ -68,6 +91,16 @@ li {
 	font-family: 'DM Sans', sans-serif;
     left:50%;
 	transform: translate(-50%, -50%);
+
+}
+
+#centertexttobottom{
+	position:absolute;
+	top: 6%;
+	font-size: 20px;
+	font-family: 'DM Sans', sans-serif;
+    left:50%;
+	transform: translate(-50%, 450%);
 
 }
 	

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Study Notes</title>
+<link rel="stylesheet" href="../CSS/Selection Page's.css" >
+</head>
+
+<body onLoad="transition()">
+
+	
+<div id="center"  style="overflow:scroll; height:90%; width: 100%; padding-left: 12%; padding-top: 6%">
+<h1 id="centertop">Study Notes</h1>
+<a href="../Index.html" style="color: white; text-decoration: none; font-size: 20px"><p>Back</p></a>
+<a href="../Pages/Study/S1_LaserCutter.html"><img class="circleButton" style="" src="../Pages/Study/S1_Resorces/Icon.svg" alt="Laser Cutting"></a>
+
+	
+	
+</div>	
+<div class="loader">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <div class="bar4"></div>
+  <div class="bar5"></div>
+  <div class="bar6"></div>
+</div>
+	
+<script >
+// play on load for gallery view
+setTimeout(transition, 1000);
+
+$('.js-trigger-transition').on('click', function(e) {
+  e.preventDefault();
+  transition();
+});
+
+function transition() {
+  var tl = new TimelineMax();
+  
+  tl.to(CSSRulePlugin.getRule('body:before'), 0.2, {cssRule: {top: '50%' }, ease: Power2.easeOut}, 'close')
+  .to(CSSRulePlugin.getRule('body:after'), 0.2, {cssRule: {bottom: '50%' }, ease: Power2.easeOut}, 'close')
+  .to($('.loader'), 0.2, {opacity: 1})
+  .to(CSSRulePlugin.getRule('body:before'), 0.2, {cssRule: {top: '0%' }, ease: Power2.easeOut}, '+=1.5', 'open')
+  .to(CSSRulePlugin.getRule('body:after'), 0.2, {cssRule: {bottom: '0%' }, ease: Power2.easeOut}, '-=0.2', 'open')
+  .to($('.loader'), 0.2, {opacity: 0}, '-=0.2');
+}
+	</script>
+	
+</body>
+</html>
